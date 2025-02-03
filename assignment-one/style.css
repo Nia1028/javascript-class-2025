@@ -1,0 +1,13 @@
+h1 {
+  color: purple;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+  color: brown;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+}
+ul li {
+  color: green;
+  font-size: 20px;
+}
