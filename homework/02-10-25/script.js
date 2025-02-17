@@ -46,9 +46,33 @@ if (number <= 0) {
   );
 }
 
-//3. 
+//3.
 
-//4.
+//4.SWITCH CONDITION
+
+let DayOftheWeek = "MON";
+switch (DayOftheWeek) {
+  case "SUN":
+    console.log("Have a relaxing Sunday!");
+    break;
+  case "MON":
+    console.log("Happy Monday! Let's start the week strong!");
+    break;
+  case "TUE":
+    console.log("Terrific Tuesday! Keep up the momentum!");
+    break;
+  case "WED":
+    console.log("Wonderful Wednesday! You're halfway there!");
+    break;
+  case "THU":
+    console.log("Thoughtful Thursday! Stay motivated!");
+    break;
+  case "FRI":
+    console.log("Fantastic Friday! The weekend is near!");
+    break;
+  default:
+    console.log("Superb Saturday! Enjoy your day!");
+}
 
 //5.
 
