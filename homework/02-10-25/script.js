@@ -50,8 +50,8 @@ if (number <= 0) {
 
 //4.SWITCH CONDITION
 
-let DayOftheWeek = "MON";
-switch (DayOftheWeek) {
+let dayOfTheWeek = "MON";
+switch (dayOfTheWeek) {
   case "SUN":
     console.log("Have a relaxing Sunday!");
     break;
