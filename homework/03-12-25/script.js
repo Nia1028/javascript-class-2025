@@ -128,27 +128,114 @@ const jim = createUser("Jim jones", "jimjones@gmail.com");
 console.log(jim);
 console.log("-------------------------------------------");
 
-// function calculateTwoPlusFive()
-// {
-//   function addTwoPlusFive()
-//   {console.log('2+5 = ${2+5}');
-//   }
-//   addTwoPlusFive();
-// }
-// calculateTwoPlusFive();
+function calculateTwoPlusFive() {
+  function addTwoPlusFive() {
+    console.log(`2+5 = ${2 + 5}`);
+  }
+  addTwoPlusFive();
+}
+calculateTwoPlusFive();
+console.log("-------------------------------------------");
 
-//CLOUSER
+// CLOUSER
 
-// function createCounter() {
-//   let count = 0; //private variable
-//   return function () {
-//     count++;
-//     console.log(count);
-//   };
-// }
-// const counter = createCounter();
-// counter();
-// counter();
-// console.log("-------------------------------");
+function createCounter() {
+  let count = 0; //private variable
+  return function () {
+    count++;
+    console.log(count);
+  };
+}
+const counter = createCounter();
+counter();
+counter();
+counter();
+counter();
+console.log("-------------------------------");
 
+function multiplier(factor) {
+  return function (number) {
+    return number * factor;
+  };
+}
+let twice = multiplier(2);
+console.log(twice(5));
+console.log("-------------------------------");
 
+// STRING METHODS
+
+const str = "Boy are my arms tired!";
+console.log(str.length); // 22
+console.log(str.toUpperCase()); // BOY ARE MY ARMS TIRED!
+console.log(str); // Boy are my arms tired!
+console.log("-------------------------------");
+
+const newstr = str.toUpperCase();
+console.log(newstr); // BOY ARE MY ARMS TIRED!
+console.log("-------------------------------");
+
+//SUBSTRING
+const partOfString = str.substring(2, 9);
+console.log(partOfString);
+
+//SLICE takes negative index
+
+const anotherPartOfString = str.slice(3, 8);
+console.log(anotherPartOfString);
+console.log("-------------------------------");
+
+const stillSomeOfString = str.slice(-6, -1);
+console.log(stillSomeOfString);
+console.log("-------------------------------");
+
+//INDEX OF
+
+const locationOfA = str.indexOf("a");
+console.log(locationOfA); // will print the first 'a' of the array.
+console.log("-------------------------------");
+
+const locOfAFromEnd = str.lastIndexOf("a"); // will print the last "a" in an array.
+console.log(locOfAFromEnd);
+console.log("-------------------------------");
+
+//TRIM
+
+console.log(str + "!!");
+const trimmedString = str.trim();
+console.log(trimmedString);
+console.log("-------------------------------");
+
+//SPLIT
+
+const stringLineArray = trimmedString.split(" ");
+console.log(stringLineArray);
+console.log("-------------------------------");
+
+//JOIN
+
+const joinedstringLine = stringLineArray.join(",");
+console.log(joinedstringLine);
+console.log("-------------------------------");
+
+const lowerCaseStringLine = str.trim().toLowerCase();
+console.log(lowerCaseStringLine);
+console.log("-------------------------------");
+
+//PAD START
+
+const time = "5:36 am";
+const militaryTime = time.substring(0, 4).replace(":", "").padStart(4, "0");
+console.log(militaryTime);
+console.log("-------------------------------");
+
+//PAD START
+
+const newTime = time.substring(0, 4).replace(":", "").padEnd(4, "0");
+console.log(newTime);
+console.log("-------------------------------");
+
+// chartAt- Character at an index
+console.log(`The character at index 5 is '${time.charAt(5)}'.`);
+console.log("-------------------------------");
+
+//ARRAY METHODS

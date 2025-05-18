@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .tile {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    padding: 20px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .tile.selected {
+    background-color: #add8e6;
+    border-color: #0000ff;
+  }
+  
+  #controls {
+    margin: 20px 0;
+  }
+  
+  #found-words {
+    list-style-type: none;
+    padding: 0;
+  }

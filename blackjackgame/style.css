@@ -1,17 +1,63 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+body {
+  font-family: Roboto;
+  text-align: center;
+  margin: 0;
 }
 
 #dealer-cards img,
 #player-cards img {
-    height: 175px;
-    width: 125;
-    margin: 1px;
+  height: 175px;
+  width: 125;
+  margin: 5px;
 }
 #hit,
-#stay{
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
+#stay {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+}
+#background {
+  background-image: linear-gradient(#2f6b4d, #2e4d3e);
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h2,
+p {
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0.3);
+}
+
+.myButton {
+  box-shadow: 0px 10px 14px -7px rgba(0, 0, 0.3);
+  background-image: linear-gradient(to bottom, #eaeaf2, #c0d1d5);
+  border-radius: 10px;
+  border: 1px solid #4b8f29;
+  display: inline-block;
+  cursor: pointer;
+  color: #2f6b4d;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0.75em 1.5em;
+  margin: 5px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #5b8a3c;
+}
+
+#hit.noHit {
+  background-image: linear-gradient(to bottom, #f4a7bb, #f27690);
+  color: white;
+}
+
+.myButton:hover {
+  background-image: linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+  /* background-color: #72b352; */
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
 }

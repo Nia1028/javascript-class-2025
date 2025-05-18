@@ -1,0 +1,54 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  background-color: pink;
+}
+.body,
+h1 {
+  font-size: 50px;
+}
+.body,
+div,
+li {
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(4, 80px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.tile {
+  background: #daee90;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 20 px;
+  text-align: center;
+  line-height: 80px;
+  cursor: pointer;
+  user-select: none;
+}
+#word-display {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+#score {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#submit-word,
+#reset-selection {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 4px;
+  background-color: #b0e6e2;
+}
